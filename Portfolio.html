@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: lightseagreen;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background: burlywood;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .project {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1 1 45%;
+    }
+    footer {
+      background: burlywood;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .foot {
+      background: burlywood;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 1rem 0;
+    }
+
+    .foot img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .myphoto {
+      border-radius: 50px;
+      margin-left: 70%;
+      margin-top: -30%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lavesh Jangid</h1>
+    <p>Web Developer | Designer | Freelancer</p>
+    <img class="myphoto" src="myphoto.jpg" width="80px">
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Lavesh, a passionate web developer with experience in creating responsive and user-friendly websites. I specialize in HTML, CSS, and modern web design practices.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Project One</h3>
+          <p>A simple landing page designed using HTML and CSS.</p>
+        </div>
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>A portfolio website showcasing my web design skills.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: jangidlavesh733@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/Laveshjangid</p>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <a href="https://twitter.com" target="_blank">
+      <img src="X logo.webp" alt="Twitter">
+    </a>
+    <a href="https://youtube.com" target="_blank">
+      <img src="youtubelogo.png" alt="YouTube">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img src="v982-d3-04.jpg" alt="Instagram">
+    </a>
+  </footer>
+</body>
+</html>
