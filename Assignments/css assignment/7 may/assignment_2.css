@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 20px 0;
+    letter-spacing: 1px;
+}
+body{
+    background-color: rgb(27, 23, 23);
+
+}
+h1{
+    color: rgb(199, 11, 132); /* Or use hex: #c70b84 */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: -2px;
+    /* padding-left: 100px; */
+    margin-top: 25px;
+}
+hr{
+    color: aquamarine;
+}
+p{
+    width: 280px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top:34px ;
+    margin-bottom: 50px;
+}
+.frames{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 30px 230px;
+    
+}
+.frame1{
+    width: 20vw;
+    height: 70vh;
+    border:1 solid transparent;
+    border-radius: 50px;
+    background-color: white;
+    margin: 10px 10px;
+   text-align: center;
+   
+}
+
+img {
+    width: 25px;
+
+}
+.social{
+    width: 20vw;
+    background-color: rgb(134, 27, 121);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding:22px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.photo1{
+    width: 20vw;
+    height: 30vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.photo2{
+    width: 23vw;
+    height: 34vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.frame2{
+    width: 23vw;
+    height: 77vh;
+    border:1 solid transparent;
+    border-radius: 50px;
+    background-color: white;
+    margin: 10px 10px;
+   text-align: center;
+}
+
+.frame2 .social{
+    width: 23vw;
+    
+}
+
+.frame2 p{
+    
+        width: 280px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 33px;
+        margin-top:40px ;
+        margin-bottom: 50px;
+    
+}
+
+.frame2 h1{
+    margin-top: 35px;
+}
+.frame2 .social img{
+    width: 30px;
+}
