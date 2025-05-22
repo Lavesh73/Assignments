@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3.2</title>
+</head>
+<body style="display: flex; justify-content: center;  text-align: center;">
+   <form action="" style="width: 40vw;">
+            <fieldset >
+            <h3>Personal Details</h3><br>
+            <label for="name">Name:</label>
+            <input type="text">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <br><br>
+            <label for="email">Email id:</label>
+            <input type="email">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <h3>Educational Qualification</h3><br>
+            <label for="degree">Degree:</label>
+            <select name="degree" id="degree">
+                <option>-- Select Group --</option>
+                <option value="btech">Btech</option>
+                <option value="bsc">BSC</option>
+                <option value="bcom">Bcom</option>
+            </select><br><br>
+
+            <label for="eng">Engineering:</label>
+            <select name="engineering">
+                <option>-- Select Group --</option>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+            </select><br><br>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" name="hobbies" id="chess"><label for="chess">Playing chess </label>
+            <input type="checkbox" name="hobbies" id="books"><label for="books">Reading Books</label>
+            <br><br>
+            <h3>Address</h3>
+            <!-- <input type="text" width="400" height="150"> -->
+            <textarea rows="7" cols="50"></textarea><br><br>
+            <br><br>
+            <label for="resume">Attach Resume:</label>
+        <input type="file" id="resume"><br><br>
+
+        <input type="submit" value="SUBMIT">
+        </fieldset>
+        </form>
+
+</body>
+</html>
