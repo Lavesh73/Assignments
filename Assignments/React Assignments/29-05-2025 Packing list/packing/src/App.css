@@ -1,0 +1,110 @@
+.container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 24px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.itemText {
+  flex: 1;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.itemText:hover {
+  color: #555;
+}
+
+.editInput {
+  flex: 1;
+  padding: 8px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.editBtn,
+.saveBtn {
+  margin-left: 8px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+.editBtn:hover,
+.saveBtn:hover {
+  background-color: #218838;
+}
+
+.deleteBtn {
+  margin-left: 8px;
+  background-color: transparent;
+  color: #dc3545;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.1);
+  color: #b02a37;
+}
