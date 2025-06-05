@@ -1,0 +1,119 @@
+body {
+    background-color: #1F2122;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    top: 0;
+    z-index: 100;
+}
+
+.CyborgLogo {
+    width: 220px;
+    transition: ease 0.3s;
+}
+
+.CyborgLogo:hover {
+    transform: scale(1.02);
+}
+
+.navbarelements {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbarelements a {
+    text-decoration: none;
+    color: #B0B0B0;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+.navbarelements a:hover {
+    color: #C73522;
+}
+
+.main-content {
+    padding: 40px;
+    text-align: center;
+}
+
+.mainimage {
+    max-width: 90%;
+    height: auto;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: ease 0.3s;
+}
+
+.mainimage:hover {
+    transform: scale(1.02); 
+}
+
+.Cardcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    width: 280px;
+    background: #2A2D2E;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: ease 0.3s;
+}
+
+.game-card:hover {
+    transform: scale(1.02);
+}
+
+.game-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.game-text {
+    padding: 15px;
+}
+
+.game-text h2 {
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.stats-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-rating {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.game-players {
+    color: #B0B0B0;
+    font-size: 0.9rem;
+}
+
+/* Ensures the anchor tag covers the image properly */
+.game-card a {
+    display: block;
+}

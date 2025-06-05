@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="browse.css">
+  </head>
+  <body>
+    <div class="navbar">
+        <img src="CyborgLogo.png" alt="Cyborg Logo" class="CyborgLogo">
+        <ul class="navbarelements">
+            <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+            <li><a href="#" onclick="window.location.href='browse.html'">Browse</a></li>
+            <li><a href="#">Details</a></li>
+            <li><a href="#">Streams</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </div>
+<div class="container">
+        <div class="featured-section">
+            <div class="section-header">
+                <h1 class="section-title">
+                    <span class="featured-title">Featured</span> 
+                    <span class="games-text">Games</span>
+                </h1>
+                <div class="nav-arrows">
+                    <div class="nav-arrow">‹</div>
+                    <div class="nav-arrow">›</div>
+                </div>
+            </div>
+          
+            <div class="featured-games">
+                <div class="game-card cs-go">
+                    <div class="game-content">
+                        <div class="game-title">CS-GO</div>
+                        <div class="game-stats">
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span>4.8</span>
+                            </div>
+                            <div class="downloads">
+                                <span class="download-icon">↓</span>
+                                <span>2.3M</span>
+                            </div>
+                            <span>249K Downloads</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card gamezer">
+                    <div class="game-content">
+                        <div class="game-title">Gamezer</div>
+                        <div class="game-stats">
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span>4.8</span>
+                            </div>
+                            <div class="downloads">
+                                <span class="download-icon">↓</span>
+                                <span>2.3M</span>
+                            </div>
+                            <span>249K Downloads</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card island-rusty">
+                    <div class="game-content">
+                        <div class="game-title">Island Rusty</div>
+                        <div class="game-stats">
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span>4.8</span>
+                            </div>
+                            <div class="downloads">
+                                <span class="download-icon">↓</span>
+                                <span>2.3M</span>
+                            </div>
+                            <span>249K Downloads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="downloads-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="top-text">Top</span> 
+                    <span class="downloaded-text">Downloaded</span>
+                </h2>
+            </div>
+            
+            <div class="top-games-list">
+                <div class="top-game-item">
+                    <div class="game-icon fortnite"></div>
+                    <div class="game-info">
+                        <div class="game-name">Fortnite</div>
+                        <div class="game-category">Sandbox</div>
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.9</span>
+                            <span class="download-icon">↓</span>
+                            <span>2.2M</span>
+                        </div>
+                    </div>
+                    <button class="download-btn">↓</button>
+                </div>
+                
+                <div class="top-game-item">
+                    <div class="game-icon cs-go-top"></div>
+                    <div class="game-info">
+                        <div class="game-name">CS-GO</div>
+                        <div class="game-category">Legendary</div>
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.9</span>
+                            <span class="download-icon">↓</span>
+                            <span>2.2M</span>
+                        </div>
+                    </div>
+                    <button class="download-btn">↓</button>
+                </div>
+                
+                <div class="top-game-item">
+                    <div class="game-icon puge"></div>
+                    <div class="game-info">
+                        <div class="game-name">Puge</div>
+                        <div class="game-category">Battle Royale</div>
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.9</span>
+                            <span class="download-icon">↓</span>
+                            <span>2.2M</span>
+                        </div>
+                    </div>
+                    <button class="download-btn">↓</button>
+                </div>
+            </div>
+            
+            <div class="view-all">
+                <a href="#" class="view-all-link">View All Games</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactivity
+        document.querySelectorAll('.game-card').forEach(card => {
+            card.addEventListener('click', function() {
+                console.log('Game selected:', this.querySelector('.game-title').textContent);
+            });
+        });
+
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.innerHTML = '✓';
+                this.style.background = '#4caf50';
+                setTimeout(() => {
+                    this.innerHTML = '↓';
+                    this.style.background = '#e91e63';
+                }, 2000);
+            });
+        });
+        document.querySelectorAll('.nav-arrow').forEach(arrow => {
+            arrow.addEventListener('click', function() {
+                console.log('Navigate:', this.textContent);
+            });
+        });
+    </script>
+</body>
+</html>
